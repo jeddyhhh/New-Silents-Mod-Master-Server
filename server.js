@@ -84,7 +84,6 @@ function checkIfAnythingOnline(){
     fs.writeFileSync("currentServers.json", JSON.stringify([ar]))
     console.log("No servers online, clearing serverlist");
   }
-  
 }
 
 checkIfAnythingOnline();
