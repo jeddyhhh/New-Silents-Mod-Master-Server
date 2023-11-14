@@ -8,4 +8,4 @@ If there was an issue in the original 0.11.2 mod, it will also be here.
 
 Go to releases on the right hand side, click "All required files" then download Silent.s.XLMultiplayer.Mod.0-11-3.zip
 
-It's recommended to ping the server using Postman https://www.postman.com/ with "http://{serverIP}/api/getsxlservers" if the SXL mod can not find the server in the Server Browser
+It's recommended to ping the server using Postman https://www.postman.com/ a few times with "http://{serverIP}/api/getsxlservers" if the SXL mod can not find the server in the Server Browser
