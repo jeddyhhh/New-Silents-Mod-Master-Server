@@ -6,6 +6,13 @@ var servers = '';
 var servers2 = '';
 var timestamp = '';
 
+function getTimestamp () {
+  const pad = (n,s=2) => (`${new Array(s).fill(0)}${n}`).slice(-s);
+  const d = new Date();
+  
+  return `${pad(d.getFullYear(),4)}-${pad(d.getMonth()+1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+}
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -52,15 +59,14 @@ app.post('/api/postsxlservers', (req, res) => {
     });
 
     var newServer = JSON.stringify(req.body);
-    console.log("A SXL server has pinged master server: " + newServer);
+    console.log("\n" + getTimestamp());
+    console.log("A SXL server has pinged master server: \n" + newServer + '\n');
 
     fs.readFile('currentServers.json', function (err, data) {
       var json = JSON.parse(data)
 
       var newData = JSON.parse(JSON.stringify(req.body));
       var newIpAddr = newData["ip"];
-
-      console.log("This is the ip address: " + newIpAddr)
 
       var newArr = json[0].filter(function(a) {
         return a.ip !== newIpAddr;
