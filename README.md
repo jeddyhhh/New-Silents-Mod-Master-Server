@@ -13,6 +13,8 @@ Current issues:
 - XLSAdmin's client side plugin for XL Multiplayer fails to load, could be a .Net mismatch, not sure at all tbh. You can just delete the zip file it sends
 and everything works fine but you lose the ability to ban via hardware ID's.
 
+Link to my XLMultiplayer mod and server repository: https://github.com/jeddyhhh/XLMultiplayer-0.11.3
+
 node.js is required to run the master server https://nodejs.org/en/ start with "node server.js"
 
 Go to releases on the right hand side, click "All required files" then download Silent.s.XLMultiplayer.Mod.0-11-3.zip for the SXL mod and server program.
