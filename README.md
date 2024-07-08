@@ -1,5 +1,5 @@
 # New-Silents-Mod-Master-Server
-A replacement for the master server of Silent's multiplayer mod for SkaterXL 1.1.0.4
+A replacement for the master server of Silent's multiplayer mod for SkaterXL 1.1.0.2
 
 Download the code here and run with node.js https://nodejs.org/en/ 
 Start with "node server.js"
